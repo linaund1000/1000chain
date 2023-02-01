@@ -6,7 +6,8 @@ import (
 )
 type Record struct {
 	IntoWallet map[time.Time]float64
-
+	FromWallet map[time.Time]float64
+	
 }
 
 
@@ -23,7 +24,6 @@ func NewWallet()*Wallet{
 		Stake : 0 ,
 	}
 	w.PubKey = c.GeneratePUBKEY()
-
 	return	w
 }
 
