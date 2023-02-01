@@ -1,10 +1,10 @@
 package main
 
 import (
-	b "1000chain/Block"
-	v "1000chain/validators"
-	"fmt"
+	b "1000chain/Chainy/Block"
+	v "1000chain/Chainy/validators"
 	"time"
+	"fmt"
 )
 
 func main() {
@@ -14,8 +14,8 @@ func main() {
 	fBlock := b.FirstBlock()
 	chain = append(chain, fBlock)	
 	for i , validator := range val{
-		fmt.Println("CRINGE ", validator.PubKey)
-		fmt.Println("                        ")
+		fmt.Println("CRINGE ", validator.)
+		fmt.Println("stake ::",  validator.Stake        )
 		new := b.NewBlock(fBlock,i)
 		fBlock = new
 		chain = append(chain, fBlock)
