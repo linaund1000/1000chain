@@ -9,7 +9,7 @@ import (
 )
 
 func GeneratePUBKEY() string {
-	//is it good approach to bind that in time	
+	//is it good approach to bind to time	
 	
 	rand.Seed(time.Now().UnixNano())
 	r := rand.Intn(100)	

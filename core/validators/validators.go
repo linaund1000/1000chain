@@ -1,4 +1,4 @@
-package validators
+connection with server and database through a filepackage validators
 
 import (
 	"errors"
